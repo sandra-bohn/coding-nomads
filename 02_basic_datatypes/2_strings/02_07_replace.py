@@ -8,3 +8,13 @@ Result: #ore python progra##ing please
 
 '''
 
+# Get sentence
+sentence = input("Enter a sentence: ")
+# Get symbol
+symbol = input("Enter a symbol: ")
+# Make replacement ignore case
+sentence = sentence.lower()
+# Get first letter of sentence
+first = sentence[0]
+# Print result
+print(sentence.replace(first, symbol))
