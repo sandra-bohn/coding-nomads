@@ -11,3 +11,17 @@ Note: This lab might be challenging! Make sure to discuss it with your mentor
 or chat about it on our forum.
 
 '''
+# Get list of numbers
+numbers = input("Enter a list of 10 numbers separated by spaces: ")
+num_list = numbers.split()
+# Sort the numbers
+num_list.sort()
+if len(num_list) % 2 == 1:
+    num_list.append(0)
+# Store the numbers in tuples of two in a list and print each tuple
+tuple_list = []
+for i in range(0, len(num_list), 2):
+    j = i + 1
+    new_tuple = (float(num_list[i]), float(num_list[j]))
+    print(new_tuple)
+    tuple_list.append(new_tuple)

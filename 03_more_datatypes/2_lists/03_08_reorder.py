@@ -7,3 +7,9 @@ Example input:  1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+# Get numbers
+numbers = input("Enter a list of 10 numbers separated by spaces: ")
+numlist = numbers.split()
+# Print numbers
+print(numlist[1], numlist[3], numlist[5], numlist[7], numlist[9], numlist[8], numlist[6],
+      numlist[4], numlist[2], numlist[0])

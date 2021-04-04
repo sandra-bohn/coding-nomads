@@ -13,3 +13,18 @@ to flatten a list of any depth. Can you understand the code used?
 '''
 
 starting_list = [[1, 2, 3, 4], [5, 6], [7, 8, 9]]
+# For loop way
+flattened_list = []
+for i in starting_list:
+    if type(i) is list:
+        for j in i:
+            flattened_list.append(j)
+    else:
+        flattened_list.append(i)
+
+print(flattened_list)
+
+# Sum way
+flat_list = sum(starting_list, [])
+print(flat_list)
+
