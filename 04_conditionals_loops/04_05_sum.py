@@ -7,3 +7,11 @@ The output of your calculation should therefore look like this:
 
 The sum is: 5050
 '''
+# Get numbers
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+# Calculate sum
+sum = 0
+for i in range(num1, num2 + 1):
+    sum += i
+print(f"The sum is: {sum}")

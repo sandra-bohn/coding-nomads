@@ -8,3 +8,10 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
+n = 0
+
+for i in range(0, 50, 10):
+    list_ = ""
+    for j in range(0, 10):
+        list_ += str(i + j) + " "
+    print(list_)
