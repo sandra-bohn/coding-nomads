@@ -18,3 +18,9 @@ famous_quotes = [
     {"full_name": "Nathan Myhrvold", "quote": "Software is a gas; it expands to fill its container."},
     {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}
 ]
+
+for item in famous_quotes:
+    if len(item['full_name'].split()) == 2:
+        print(f"\"{item['quote']}\" - {item['full_name'].split()[-1]}, {item['full_name'].split()[0]}")
+    else:
+        print(f"\"{item['quote']}\" - {item['full_name'].split()[-1]}, {item['full_name'].split()[0]} {item['full_name'].split()[1]}")

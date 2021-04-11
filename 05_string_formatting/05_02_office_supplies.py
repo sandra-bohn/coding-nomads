@@ -25,3 +25,6 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+for line in office:
+    names = f'{line["full_name"].split()[-1].upper()}, {line["full_name"].split()[0]}'
+    print(f'{names:25}{line["item"].capitalize()}')
