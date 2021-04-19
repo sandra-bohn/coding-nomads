@@ -9,3 +9,26 @@ Create at least two different objects of this Car class and demonstrate
 changing the objects attributes.
 
 '''
+
+class Car():
+    def __init__(self, name, model, year, max_speed):
+        "Assigns car's name, model, year, and max_speed"
+        self.name = name
+        self.model = model
+        self.year = year
+        self.max_speed = max_speed
+    def __str__(self):
+        return f"{self.name} is a {self.year} {self.model} with a maximum speed of {self.max_speed}."
+    def increase_max(self):
+        "Increases max_speed by 5 each time it is called"
+        self.max_speed += 5
+
+mycar = Car('My car', 'Honda Fit', 2013, 100)
+oldcar = Car('My old car', 'Toyota Celica', 2001, 110)
+print(mycar)
+mycar.increase_max()
+print(mycar)
+print(oldcar)
+oldcar.increase_max()
+oldcar.increase_max()
+print(oldcar)
