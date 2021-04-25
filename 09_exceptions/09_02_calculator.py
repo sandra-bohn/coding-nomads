@@ -8,3 +8,21 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+
+while True:
+    # get input and check that it's a number
+    try:
+        dividend = float(input('Enter a number: '))
+    except ValueError:
+        print('You didn\'t enter a number. Try again.')
+        continue
+    try:
+        divisor = float(input('Enter another number: '))
+    except ValueError:
+        print('You didn\'t enter a number. Try again.')
+        continue
+    # calculate the quotient
+    try:
+        print(f'{dividend} / {divisor} = {dividend/divisor}')
+    except ZeroDivisionError:
+        print('You cannot divide by 0. Try again.')
